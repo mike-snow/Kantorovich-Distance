@@ -66,6 +66,8 @@ solution = solvers.lp(c, G, h, A, b, solver='solver')
 
 x = solution['x']
 
+# Approximation to Wasserstein distance
+
 print x.trans()*c
 
 # plots of distributions
